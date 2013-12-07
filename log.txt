@@ -1,0 +1,314 @@
+buy it at 06-22:28 | money: 10002.99
+    buy price: 6099.010000  |  current-amount: 1.000000, current-account: 3900.990000
+sell it at 06-22:45 | money: 9992.97
+    sell price: 6091.980000  |  current-amount: 0.000000, current-account: 9992.970000
+buy it at 06-23:10 | money: 9993.69
+    buy price: 6091.290000  |  current-amount: 1.000000, current-account: 3901.680000
+sell it at 06-23:25 | money: 9966.67
+    sell price: 6064.990000  |  current-amount: 0.000000, current-account: 9966.670000
+buy it at 06-23:25 | money: 9971.44
+    buy price: 6065.230000  |  current-amount: 1.000000, current-account: 3901.440000
+sell it at 06-23:46 | money: 9927.44
+    sell price: 6026.000000  |  current-amount: 0.000000, current-account: 9927.440000
+buy it at 06-23:46 | money: 9927.45
+    buy price: 6025.990000  |  current-amount: 1.000000, current-account: 3901.450000
+sell it at 06-23:46 | money: 9924.45
+    sell price: 6023.000000  |  current-amount: 0.000000, current-account: 9924.450000
+buy it at 06-23:47 | money: 9928.53
+    buy price: 6020.810000  |  current-amount: 1.000000, current-account: 3903.640000
+sell it at 06-23:47 | money: 9923.23
+    sell price: 6019.590000  |  current-amount: 0.000000, current-account: 9923.230000
+buy it at 06-23:47 | money: 9933.22
+    buy price: 6010.000000  |  current-amount: 1.000000, current-account: 3913.230000
+sell it at 06-23:47 | money: 9914.23
+    sell price: 6001.000000  |  current-amount: 0.000000, current-account: 9914.230000
+buy it at 06-23:47 | money: 9915.23
+    buy price: 5999.000000  |  current-amount: 1.000000, current-account: 3915.230000
+sell it at 06-23:47 | money: 9914.22
+    sell price: 5998.990000  |  current-amount: 0.000000, current-account: 9914.220000
+buy it at 06-23:47 | money: 9923.14
+    buy price: 5990.070000  |  current-amount: 1.000000, current-account: 3924.150000
+sell it at 06-23:48 | money: 9907.05
+    sell price: 5982.900000  |  current-amount: 0.000000, current-account: 9907.050000
+buy it at 06-23:48 | money: 9919.05
+    buy price: 5968.000000  |  current-amount: 1.000000, current-account: 3939.050000
+sell it at 06-23:48 | money: 9919.05
+    sell price: 5980.000000  |  current-amount: 0.000000, current-account: 9919.050000
+buy it at 06-23:48 | money: 9932.43
+    buy price: 5966.620000  |  current-amount: 1.000000, current-account: 3952.430000
+sell it at 06-23:48 | money: 9902.43
+    sell price: 5950.000000  |  current-amount: 0.000000, current-account: 9902.430000
+buy it at 06-23:48 | money: 9919.14
+    buy price: 5933.290000  |  current-amount: 1.000000, current-account: 3969.140000
+sell it at 06-23:48 | money: 9919.14
+    sell price: 5950.000000  |  current-amount: 0.000000, current-account: 9919.140000
+buy it at 06-23:48 | money: 9935.85
+    buy price: 5933.290000  |  current-amount: 1.000000, current-account: 3985.850000
+sell it at 06-23:49 | money: 9898.85
+    sell price: 5913.000000  |  current-amount: 0.000000, current-account: 9898.850000
+buy it at 06-23:49 | money: 9910.85
+    buy price: 5901.000000  |  current-amount: 1.000000, current-account: 3997.850000
+sell it at 06-23:49 | money: 9897.86
+    sell price: 5900.010000  |  current-amount: 0.000000, current-account: 9897.860000
+buy it at 06-23:49 | money: 9897.91
+    buy price: 5899.960000  |  current-amount: 1.000000, current-account: 3997.900000
+sell it at 06-23:49 | money: 9897.89
+    sell price: 5899.990000  |  current-amount: 0.000000, current-account: 9897.890000
+buy it at 06-23:49 | money: 9897.92
+    buy price: 5899.960000  |  current-amount: 1.000000, current-account: 3997.930000
+sell it at 06-23:50 | money: 9877.93
+    sell price: 5880.000000  |  current-amount: 0.000000, current-account: 9877.930000
+buy it at 07-00:00 | money: 9883.93
+    buy price: 5894.000000  |  current-amount: 1.000000, current-account: 3983.930000
+sell it at 07-00:17 | money: 9923.92
+    sell price: 5939.990000  |  current-amount: 0.000000, current-account: 9923.920000
+buy it at 07-00:45 | money: 9979.58
+    buy price: 5711.000000  |  current-amount: 1.000000, current-account: 4212.920000
+sell it at 07-00:45 | money: 9979.58
+    sell price: 5766.660000  |  current-amount: 0.000000, current-account: 9979.580000
+buy it at 07-00:45 | money: 10026.54
+    buy price: 5719.700000  |  current-amount: 1.000000, current-account: 4259.880000
+sell it at 07-00:45 | money: 10059.88
+    sell price: 5800.000000  |  current-amount: 0.000000, current-account: 10059.880000
+buy it at 07-00:46 | money: 10139.88
+    buy price: 5720.000000  |  current-amount: 1.000000, current-account: 4339.880000
+sell it at 07-00:46 | money: 10107.88
+    sell price: 5768.000000  |  current-amount: 0.000000, current-account: 10107.880000
+buy it at 07-00:46 | money: 10125.88
+    buy price: 5750.000000  |  current-amount: 1.000000, current-account: 4357.880000
+sell it at 07-00:46 | money: 10097.89
+    sell price: 5740.010000  |  current-amount: 0.000000, current-account: 10097.890000
+buy it at 07-00:46 | money: 10154.89
+    buy price: 5732.000000  |  current-amount: 1.000000, current-account: 4365.890000
+sell it at 07-00:50 | money: 10165.89
+    sell price: 5800.000000  |  current-amount: 0.000000, current-account: 10165.890000
+buy it at 07-00:50 | money: 10184.89
+    buy price: 5781.000000  |  current-amount: 1.000000, current-account: 4384.890000
+sell it at 07-00:50 | money: 10180.42
+    sell price: 5795.530000  |  current-amount: 0.000000, current-account: 10180.420000
+buy it at 07-00:50 | money: 10194.95
+    buy price: 5781.000000  |  current-amount: 1.000000, current-account: 4399.420000
+sell it at 07-00:50 | money: 10199.42
+    sell price: 5800.000000  |  current-amount: 0.000000, current-account: 10199.420000
+buy it at 07-00:50 | money: 10202.89
+    buy price: 5796.530000  |  current-amount: 1.000000, current-account: 4402.890000
+sell it at 07-00:51 | money: 10214.64
+    sell price: 5811.750000  |  current-amount: 0.000000, current-account: 10214.640000
+buy it at 07-00:51 | money: 10244.63
+    buy price: 5800.010000  |  current-amount: 1.000000, current-account: 4414.630000
+sell it at 07-00:51 | money: 10252.2
+    sell price: 5837.570000  |  current-amount: 0.000000, current-account: 10252.200000
+buy it at 07-00:51 | money: 10289.77
+    buy price: 5800.000000  |  current-amount: 1.000000, current-account: 4452.200000
+sell it at 07-00:51 | money: 10289.77
+    sell price: 5837.570000  |  current-amount: 0.000000, current-account: 10289.770000
+buy it at 07-00:51 | money: 10318.77
+    buy price: 5801.000000  |  current-amount: 1.000000, current-account: 4488.770000
+sell it at 07-00:51 | money: 10318.77
+    sell price: 5830.000000  |  current-amount: 0.000000, current-account: 10318.770000
+buy it at 07-00:51 | money: 10348.76
+    buy price: 5810.000000  |  current-amount: 1.000000, current-account: 4508.770000
+sell it at 07-00:52 | money: 10348.77
+    sell price: 5840.000000  |  current-amount: 0.000000, current-account: 10348.770000
+buy it at 07-00:52 | money: 10357.77
+    buy price: 5801.000000  |  current-amount: 1.000000, current-account: 4547.770000
+sell it at 07-00:52 | money: 10357.77
+    sell price: 5810.000000  |  current-amount: 0.000000, current-account: 10357.770000
+buy it at 07-00:53 | money: 10363.32
+    buy price: 5801.000000  |  current-amount: 1.000000, current-account: 4556.770000
+sell it at 07-00:53 | money: 10366.77
+    sell price: 5810.000000  |  current-amount: 0.000000, current-account: 10366.770000
+buy it at 07-00:53 | money: 10373.87
+    buy price: 5802.900000  |  current-amount: 1.000000, current-account: 4563.870000
+sell it at 07-00:53 | money: 10373.87
+    sell price: 5810.000000  |  current-amount: 0.000000, current-account: 10373.870000
+buy it at 07-00:53 | money: 10382.87
+    buy price: 5801.000000  |  current-amount: 1.000000, current-account: 4572.870000
+sell it at 07-00:53 | money: 10373.87
+    sell price: 5801.000000  |  current-amount: 0.000000, current-account: 10373.870000
+buy it at 07-00:53 | money: 10377.32
+    buy price: 5806.550000  |  current-amount: 1.000000, current-account: 4567.320000
+sell it at 07-00:54 | money: 10397.32
+    sell price: 5830.000000  |  current-amount: 0.000000, current-account: 10397.320000
+buy it at 07-00:54 | money: 10408.32
+    buy price: 5790.000000  |  current-amount: 1.000000, current-account: 4607.320000
+sell it at 07-00:54 | money: 10407.32
+    sell price: 5800.000000  |  current-amount: 0.000000, current-account: 10407.320000
+buy it at 07-00:54 | money: 10417.32
+    buy price: 5790.000000  |  current-amount: 1.000000, current-account: 4617.320000
+sell it at 07-00:54 | money: 10407.32
+    sell price: 5790.000000  |  current-amount: 0.000000, current-account: 10407.320000
+buy it at 07-00:54 | money: 10426.32
+    buy price: 5781.000000  |  current-amount: 1.000000, current-account: 4626.320000
+sell it at 07-00:55 | money: 10416.32
+    sell price: 5790.000000  |  current-amount: 0.000000, current-account: 10416.320000
+buy it at 07-02:25 | money: 10421.63
+    buy price: 5776.010000  |  current-amount: 1.000000, current-account: 4640.310000
+sell it at 07-02:25 | money: 10400.31
+    sell price: 5760.000000  |  current-amount: 0.000000, current-account: 10400.310000
+buy it at 07-03:10 | money: 10418.31
+    buy price: 5462.000000  |  current-amount: 1.000000, current-account: 4938.310000
+sell it at 07-03:13 | money: 10478.28
+    sell price: 5539.970000  |  current-amount: 0.000000, current-account: 10478.280000
+buy it at 07-03:13 | money: 10504.07
+    buy price: 5522.030000  |  current-amount: 1.000000, current-account: 4956.250000
+sell it at 07-03:14 | money: 10485.25
+    sell price: 5529.000000  |  current-amount: 0.000000, current-account: 10485.250000
+buy it at 07-03:14 | money: 10515.24
+    buy price: 5520.000000  |  current-amount: 1.000000, current-account: 4965.250000
+sell it at 07-03:15 | money: 10494.14
+    sell price: 5528.890000  |  current-amount: 0.000000, current-account: 10494.140000
+buy it at 07-03:15 | money: 10514.14
+    buy price: 5500.000000  |  current-amount: 1.000000, current-account: 4994.140000
+sell it at 07-03:45 | money: 10582.14
+    sell price: 5588.000000  |  current-amount: 0.000000, current-account: 10582.140000
+buy it at 07-04:10 | money: 10601.14
+    buy price: 5561.000000  |  current-amount: 1.000000, current-account: 5021.140000
+sell it at 07-04:11 | money: 10599.23
+    sell price: 5578.090000  |  current-amount: 0.000000, current-account: 10599.230000
+buy it at 07-04:11 | money: 10615.77
+    buy price: 5545.010000  |  current-amount: 1.000000, current-account: 5054.220000
+sell it at 07-04:16 | money: 10614.22
+    sell price: 5560.000000  |  current-amount: 0.000000, current-account: 10614.220000
+buy it at 07-04:16 | money: 10615.24
+    buy price: 5557.980000  |  current-amount: 1.000000, current-account: 5056.240000
+sell it at 07-04:16 | money: 10610.24
+    sell price: 5554.000000  |  current-amount: 0.000000, current-account: 10610.240000
+buy it at 07-04:16 | money: 10622.21
+    buy price: 5528.030000  |  current-amount: 1.000000, current-account: 5082.210000
+sell it at 07-04:17 | money: 10599.18
+    sell price: 5516.970000  |  current-amount: 0.000000, current-account: 10599.180000
+buy it at 07-04:17 | money: 10615.15
+    buy price: 5501.000000  |  current-amount: 1.000000, current-account: 5098.180000
+sell it at 07-04:18 | money: 10595.08
+    sell price: 5496.900000  |  current-amount: 0.000000, current-account: 10595.080000
+buy it at 07-04:18 | money: 10597.35
+    buy price: 5494.630000  |  current-amount: 1.000000, current-account: 5100.450000
+sell it at 07-04:18 | money: 10603.4
+    sell price: 5502.950000  |  current-amount: 0.000000, current-account: 10603.400000
+buy it at 07-04:18 | money: 10710.37
+    buy price: 5400.000000  |  current-amount: 1.000000, current-account: 5203.400000
+sell it at 07-04:18 | money: 10636.74
+    sell price: 5433.340000  |  current-amount: 0.000000, current-account: 10636.740000
+buy it at 07-04:18 | money: 10642.25
+    buy price: 5427.830000  |  current-amount: 1.000000, current-account: 5208.910000
+sell it at 07-04:19 | money: 10641.75
+    sell price: 5432.840000  |  current-amount: 0.000000, current-account: 10641.750000
+buy it at 07-04:19 | money: 10671.09
+    buy price: 5400.000000  |  current-amount: 1.000000, current-account: 5241.750000
+sell it at 07-04:19 | money: 10671.08
+    sell price: 5429.330000  |  current-amount: 0.000000, current-account: 10671.080000
+buy it at 07-04:19 | money: 10704.42
+    buy price: 5400.000000  |  current-amount: 1.000000, current-account: 5271.080000
+sell it at 07-04:20 | money: 10671.08
+    sell price: 5400.000000  |  current-amount: 0.000000, current-account: 10671.080000
+buy it at 07-04:25 | money: 10687.87
+    buy price: 5450.000000  |  current-amount: 1.000000, current-account: 5221.080000
+sell it at 07-06:26 | money: 10660.08
+    sell price: 5439.000000  |  current-amount: 0.000000, current-account: 10660.080000
+buy it at 07-06:40 | money: 10660.69
+    buy price: 5437.370000  |  current-amount: 1.000000, current-account: 5222.710000
+sell it at 07-06:40 | money: 10637.71
+    sell price: 5415.000000  |  current-amount: 0.000000, current-account: 10637.710000
+buy it at 07-06:40 | money: 10642.71
+    buy price: 5410.000000  |  current-amount: 1.000000, current-account: 5227.710000
+sell it at 07-06:42 | money: 10625.21
+    sell price: 5397.500000  |  current-amount: 0.000000, current-account: 10625.210000
+buy it at 07-06:42 | money: 10636.71
+    buy price: 5385.000000  |  current-amount: 1.000000, current-account: 5240.210000
+sell it at 07-06:59 | money: 10638.4
+    sell price: 5398.190000  |  current-amount: 0.000000, current-account: 10638.400000
+buy it at 07-06:59 | money: 10663.22
+    buy price: 5372.160000  |  current-amount: 1.000000, current-account: 5266.240000
+sell it at 07-06:59 | money: 10655.1
+    sell price: 5388.860000  |  current-amount: 0.000000, current-account: 10655.100000
+buy it at 07-06:59 | money: 10686.59
+    buy price: 5368.000000  |  current-amount: 1.000000, current-account: 5287.100000
+sell it at 07-07:02 | money: 10677.06
+    sell price: 5389.960000  |  current-amount: 0.000000, current-account: 10677.060000
+buy it at 07-07:10 | money: 10683.48
+    buy price: 5377.000000  |  current-amount: 1.000000, current-account: 5300.060000
+sell it at 07-07:10 | money: 10679.06
+    sell price: 5379.000000  |  current-amount: 0.000000, current-account: 10679.060000
+buy it at 07-07:10 | money: 10690.02
+    buy price: 5368.040000  |  current-amount: 1.000000, current-account: 5311.020000
+sell it at 07-07:12 | money: 10671.02
+    sell price: 5360.000000  |  current-amount: 0.000000, current-account: 10671.020000
+buy it at 07-07:12 | money: 10672.54
+    buy price: 5358.000000  |  current-amount: 1.000000, current-account: 5313.020000
+sell it at 07-07:18 | money: 10662.02
+    sell price: 5349.000000  |  current-amount: 0.000000, current-account: 10662.020000
+buy it at 07-07:18 | money: 10682.07
+    buy price: 5327.620000  |  current-amount: 1.000000, current-account: 5334.400000
+sell it at 07-07:18 | money: 10682.4
+    sell price: 5348.000000  |  current-amount: 0.000000, current-account: 10682.400000
+buy it at 07-07:18 | money: 10684.78
+    buy price: 5327.620000  |  current-amount: 1.000000, current-account: 5354.780000
+sell it at 07-07:21 | money: 10668.32
+    sell price: 5313.540000  |  current-amount: 0.000000, current-account: 10668.320000
+buy it at 07-07:24 | money: 10681.03
+    buy price: 5271.000000  |  current-amount: 1.000000, current-account: 5397.320000
+sell it at 07-07:24 | money: 10667.22
+    sell price: 5269.900000  |  current-amount: 0.000000, current-account: 10667.220000
+buy it at 07-07:24 | money: 10685.12
+    buy price: 5252.000000  |  current-amount: 1.000000, current-account: 5415.220000
+sell it at 07-07:25 | money: 10682.75
+    sell price: 5267.530000  |  current-amount: 0.000000, current-account: 10682.750000
+buy it at 07-07:35 | money: 10689.24
+    buy price: 5233.510000  |  current-amount: 1.000000, current-account: 5449.240000
+sell it at 07-07:45 | money: 10693.34
+    sell price: 5244.100000  |  current-amount: 0.000000, current-account: 10693.340000
+buy it at 07-07:45 | money: 10698.19
+    buy price: 5205.150000  |  current-amount: 1.000000, current-account: 5488.190000
+sell it at 07-07:46 | money: 10688.19
+    sell price: 5200.000000  |  current-amount: 0.000000, current-account: 10688.190000
+buy it at 07-07:46 | money: 10698.19
+    buy price: 5210.000000  |  current-amount: 1.000000, current-account: 5478.190000
+sell it at 07-07:47 | money: 10678.17
+    sell price: 5199.980000  |  current-amount: 0.000000, current-account: 10678.170000
+buy it at 07-07:47 | money: 10691.17
+    buy price: 5175.000000  |  current-amount: 1.000000, current-account: 5503.170000
+sell it at 07-07:48 | money: 10678.17
+    sell price: 5175.000000  |  current-amount: 0.000000, current-account: 10678.170000
+buy it at 07-07:48 | money: 10696.16
+    buy price: 5157.000000  |  current-amount: 1.000000, current-account: 5521.170000
+sell it at 07-07:49 | money: 10671.17
+    sell price: 5150.000000  |  current-amount: 0.000000, current-account: 10671.170000
+buy it at 07-07:49 | money: 10679.17
+    buy price: 5142.000000  |  current-amount: 1.000000, current-account: 5529.170000
+sell it at 07-07:49 | money: 10669.17
+    sell price: 5140.000000  |  current-amount: 0.000000, current-account: 10669.170000
+buy it at 07-07:50 | money: 10694.17
+    buy price: 5115.000000  |  current-amount: 1.000000, current-account: 5554.170000
+sell it at 07-07:50 | money: 10674.17
+    sell price: 5120.000000  |  current-amount: 0.000000, current-account: 10674.170000
+buy it at 07-08:00 | money: 10693.07
+    buy price: 5131.000000  |  current-amount: 1.000000, current-account: 5543.170000
+sell it at 07-08:01 | money: 10671.17
+    sell price: 5128.000000  |  current-amount: 0.000000, current-account: 10671.170000
+buy it at 07-08:01 | money: 10674.17
+    buy price: 5125.000000  |  current-amount: 1.000000, current-account: 5546.170000
+sell it at 07-08:25 | money: 10835.17
+    sell price: 5289.000000  |  current-amount: 0.000000, current-account: 10835.170000
+buy it at 07-09:07 | money: 10847.17
+    buy price: 5156.000000  |  current-amount: 1.000000, current-account: 5679.170000
+sell it at 07-09:07 | money: 10829.17
+    sell price: 5150.000000  |  current-amount: 0.000000, current-account: 10829.170000
+buy it at 07-09:07 | money: 10849.13
+    buy price: 5130.030000  |  current-amount: 1.000000, current-account: 5699.140000
+sell it at 07-09:08 | money: 10829.14
+    sell price: 5130.000000  |  current-amount: 0.000000, current-account: 10829.140000
+buy it at 07-09:08 | money: 10858.12
+    buy price: 5100.010000  |  current-amount: 1.000000, current-account: 5729.130000
+sell it at 07-09:08 | money: 10859.09
+    sell price: 5129.960000  |  current-amount: 0.000000, current-account: 10859.090000
+buy it at 07-09:08 | money: 10864.09
+    buy price: 5105.000000  |  current-amount: 1.000000, current-account: 5754.090000
+sell it at 07-09:09 | money: 10853.09
+    sell price: 5099.000000  |  current-amount: 0.000000, current-account: 10853.090000
+buy it at 07-09:09 | money: 10859.25
+    buy price: 5093.810000  |  current-amount: 1.000000, current-account: 5759.280000
+sell it at 07-09:10 | money: 10838.28
+    sell price: 5079.000000  |  current-amount: 0.000000, current-account: 10838.280000
+buy it at 07-09:19 | money: 10857.27
+    buy price: 5031.010000  |  current-amount: 1.000000, current-account: 5807.270000
