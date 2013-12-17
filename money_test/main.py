@@ -1,10 +1,12 @@
-# -*- coding: utf-8 -*-
+ # -*- coding: utf-8 -*-
+from __future__ import division
 import urllib2
 import json
 import os
 import datetime
 import time
 import pickle
+import math
 import re
 import service
 
@@ -13,7 +15,7 @@ import sys
 reload(sys) 
 
 sys.setdefaultencoding('utf-8')  
-#os.chdir(os.path.dirname(__file__))
+os.chdir(os.path.dirname(__file__))
 
 N = 9 #天数
 cK = 2.0/3.0 #k权重
@@ -22,7 +24,7 @@ COIN_PER_BIT = 0.01
 TOTAL_ACCOUNT = 100.0000
 TOTAL_AMOUNT = 0.0000
 CURRENT_PRICE = {}
-STATUS = "prepareToSell"
+STATUS = "prepareToBuy"
 
 BTCCHINA_DATA_URL = "http://k.btc123.com/markets/btcchina/btccny"
 
@@ -63,7 +65,7 @@ def loadSessionID():
 SESSION_ID = loadSessionID()
 def dataURL():
     global SESSION_ID
-    return str("http://k.btc123.com:8080/period?step=60&sid=%s&symbol=btcchinabtccny&nonce=%d000" %(SESSION_ID, int(time.time())))
+    return str("http://k.btc123.com:8080/period?step=%d&sid=%s&symbol=btcchinabtccny&nonce=%d000" %(60*15, SESSION_ID, int(time.time())))
 
 def fetchData():
     try:
@@ -122,25 +124,27 @@ def calculate(items):
     lastK = 50.0
     lastD = 50.0
     res = [];
-    chunks = [items[(i + 1 - N) :i + 1] for i in range(N - 1, len(items))]
-    for chunk in chunks:
-        Ln = min([item['low'] for item in chunk])
-        Hn = max([item['high'] for item in chunk])
-        rsv = (chunk[- 1]['sell'] - Ln)/(Hn - Ln)*100
-        lastK = (N - cK)/N*lastK + cK/N*rsv
-        lastD = (N - cD)/N*lastD + cD/N*lastK
-        J = 3.0*lastK - 2.0*lastD
+    # chunks = [items[(i + 1 - N) :i + 1] for i in range(N - 1, len(items))]
+    # for chunk in chunks:
+        # Ln = min([item['low'] for item in chunk])
+        # Hn = max([item['high'] for item in chunk])
+        # rsv = (chunk[- 1]['sell'] - Ln)/(Hn - Ln)*100
+        # lastK = (N - cK)/N*lastK + cK/N*rsv
+        # lastD = (N - cD)/N*lastD + cD/N*lastK
+        # J = 3.0*lastK - 2.0*lastD
 
-        res.append({"K":lastK, "D":lastD, "J":J, "rsv":rsv, "status":chunk[-1]})
+        # res.append({"K":lastK, "D":lastD, "J":J, "rsv":rsv, "status":chunk[-1]})
+    res = [{"status":item} for item in items]
         
-    calMACD(res, 20, 30, 40)
+    
+    calEMA(res)
         
     return res
     
-def calMACD(items, d1, d2, d3):
-    e12 = 2.0/(1 + d1)
-    e26 = 2.0/(1 + d2)
-    e9 = 2.0/(1 + d3)
+def calEMA(items):
+    e12 = 2.0/(1 + 12)
+    e26 = 2.0/(1 + 26)
+    e9 = 2.0/(1 + 9)
 
     le12 = items[0]["status"]["sell"]    #初始值
     le26 = items[0]["status"]["sell"]
@@ -153,7 +157,85 @@ def calMACD(items, d1, d2, d3):
         ldif9 = e9*dif + (1 - e9)*ldif9
         
         items[i]["osc"] = dif - ldif9
-            
+
+def ema(values, output, days, i = -1):
+    if(i == -1):
+        i = len(values) - 1
+    if(i <= 0):
+        output.append(values[i])
+        return values[i]
+    emaValue = 2.0/(1 + days)*values[i] + (1 - 2.0/(1 + days))*ema(values, output, days, i - 1)
+    output.append(emaValue)
+    return emaValue
+
+def cross(A, B):
+    res = [False]
+    for i in range(1, len(A)):
+        if A[i - 1] < B[i - 1] and A[i] > B[i]:
+            res.append(True)
+        else:
+            res.append(False)
+    return res
+
+def barslast(flags):
+    res = [0]
+    for i in range(1, len(flags)):
+        if(flags[i] == False):
+            res.append(res[i - 1] + 1)
+        else:
+            res.append(0)
+    return res
+
+def llv(values, periods):
+    return [min(values[i + 1 - (periods[i]): i + 1]) for i in range(0, len(values))]
+
+def hhv(values, periods):
+    return [max(values[i + 1 - (periods[i]): i + 1]) for i in range(0, len(values))]
+
+def calculateNew(items):
+    C = [item["sell"] for item in items]
+    L = [item["low"] for item in items]
+    H = [item["high"] for item in items]
+
+    ema_c_19 = []
+    ema(C, ema_c_19, 19)
+
+    ema_c_7 = []
+    ema(C, ema_c_7, 7)
+
+    Q_3 = cross(ema_c_19, ema_c_7)
+    Q_4 = cross(ema_c_7, ema_c_19)
+
+    Z2 = llv(L, [q + 1 for q in barslast(Q_3)])
+    Z1 = [x == y for (x, y) in zip(L, Z2)]
+
+    Z4 = hhv(H, [q + 1 for q in barslast(Q_4)])
+    Z3 = [x == y for (x, y) in zip(H, Z4)]
+
+    Q_A = []
+    Q_B = []
+    Q_C = []
+    lastColor = "red"
+    lastRedindex = 0
+    lastBlueindex = 0
+    color = ""
+    for i in range(1, len(items)):
+        if(Z1[i] == True):
+            Q_A.append((i, Z2[i]))
+            color = "blue"
+            Q_B.append((i, 0))
+        elif(Z3[i] == True):
+            Q_B.append((i, Z4[i]))
+            color = "red"
+            Q_A.append((i, 0))
+        else:
+            Q_A.append((i, 0))
+            Q_B.append((i, 0))
+        
+        lastColor = color
+        
+
+    return (Q_A, Q_B, Q_C)
 
 LAST_PRICE = 0.0
 LAST_FLAG = "normal"
@@ -168,7 +250,7 @@ def whatShouldDoNext(res):
     if(FUCKING_LINE > 0 and OSC[-1] > 0.0):
         FUCKING_LINE = 0
         return "buy"
-    if(FUCKING_LINE > 0): #一次
+    if(FUCKING_LINE > 1):
         return "normal"
     if STATUS == 'prepareToSell' and LAST_PRICE - status["sell"] > 15:
         LAST_FLAG = "normal"
@@ -177,7 +259,7 @@ def whatShouldDoNext(res):
             FUCKING_LINE += 1
         return "sell"
         
-    if(STATUS == 'prepareToSell' and status["sell"] - LAST_PRICE  > 50):
+    if(STATUS == 'prepareToSell' and status["sell"] - LAST_PRICE  > 100):
         return "sell"
 
     print("%s, %f %f %F" %(STATUS, OSC[-3], OSC[-2], OSC[-1]))
@@ -249,9 +331,8 @@ def sellIt():
     global CURRENT_PRICE
     global SERVICE
     
-    # amount = TOTAL_AMOUNT - 0.001
-    amount = COIN_PER_BIT
-    result = SERVICE.sendOrder("sell", COIN_PER_BIT)
+    amount = TOTAL_AMOUNT - 0.001
+    result = SERVICE.sendOrder("sell", amount)
     
     if(result["result"] == False):
         return False
@@ -344,7 +425,7 @@ def test():
 
         T.append(datetime.datetime.fromtimestamp(time).strftime('%d-%H:%M'))
         J.append(data[-1]['J'])
-        DD.append(data[-1]['D'])
+        DD.append(data[-1]['D']) 
         K.append(data[-1]['K'])
         S.append(status['sell'])
         A.append(status['amount'])
@@ -363,17 +444,22 @@ def test():
 
 ####################  main  #####################
 #loadStatus()
-info = SERVICE.getAccountInfo()
-print STATUS, info
-TOTAL_ACCOUNT = float(info["cny"])
-TOTAL_AMOUNT = float(info["btc"])
+#info = SERVICE.getAccountInfo()
+#print STATUS, info
+#TOTAL_ACCOUNT = float(info["cny"])
+#TOTAL_AMOUNT = float(info["btc"])
 #saveStatus()
 
 
-main()
+#main()
 
 #################### testing #####################
 #saveTestData(fetchData())  
 #test()
+
+items = fetchData()[-300:]
+items = calculate(items)
+d('\n'.join([str("%s,%f" %(datetime.datetime.fromtimestamp(item["status"]["time"]).strftime('%d-%H:%M'), item["osc"]))for item in items]), "sells")
+
 
 
