@@ -10,7 +10,7 @@ import service
 
 import numpy as np
 import sys   
-reload(sys) 
+reload(sys)
 
 sys.setdefaultencoding('utf-8')  
 #os.chdir(os.path.dirname(__file__))
@@ -375,5 +375,4 @@ main()
 #################### testing #####################
 #saveTestData(fetchData())  
 #test()
-
 
